@@ -3,39 +3,100 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Good Day Coffee is a sample independent neighborhood coffee shop website.">
-    <title>Good Day Coffee — Your daily little joy</title>
+    <meta name="description" content="Discover Annette’s Scents: thoughtful candles made to bring a little warmth, calm, and care into everyday moments.">
+    <meta name="theme-color" content="#f8f4ed">
+    <title>Annette’s Scents — A little light, a lot of care</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="logo" href="#home">good day<span>☀</span><small>COFFEE & GOOD THINGS</small></a>
-      <nav aria-label="Main navigation"><a href="#menu">The menu</a><a href="#story">Our story</a><a href="#visit">Find us</a><a class="order-link" href="#menu">Order ahead <span aria-hidden="true">↗</span></a></nav>
+      <a class="brand" href="#home" aria-label="Annette’s Scents home">
+        <img src="grok_1792160699270.jpg" alt="Annette’s Scents candle logo">
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#candles">Our candles</a>
+        <a href="#story">Our story</a>
+        <a href="#care">Made with care</a>
+        <a class="nav-cta" href="#candles">Find your moment <span aria-hidden="true">↗</span></a>
+      </nav>
     </header>
 
     <main id="home">
-      <section class="hero">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Your neighborhood happy place</p>
-          <h1>Make it a<br><span>good day.</span></h1>
-          <p>Really good coffee, really good people, and a little something sweet. Come on in—we saved you a sunny spot.</p>
-          <a class="button" href="#menu">See what’s brewing <span aria-hidden="true">↓</span></a>
-          <div class="hero-sticker" aria-hidden="true">GOOD<br>VIBES<br>BREWING</div>
+          <p class="eyebrow">A softer kind of everyday</p>
+          <h1 id="hero-title">A little light,<br><span>a lot of care.</span></h1>
+          <p>Thoughtful scents for slow mornings, cosy evenings, and all the moments in between. Let the gentle glow remind you to pause and breathe.</p>
+          <a class="button" href="#candles">Explore the collection <span aria-hidden="true">↓</span></a>
+          <p class="hero-note"><span aria-hidden="true">✳</span> Poured with care. Shared with love.</p>
         </div>
-        <div class="hero-scene">
-          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Coffee being prepared, photographed by Nathan Dumlao">
-          <a class="image-credit" href="https://unsplash.com/photos/focus-photography-of-coffee-artwork-r-KfktlyBL0">Photo: Nathan Dumlao / Unsplash</a>
-        </div>
-        <div class="hero-ribbon">GOOD COFFEE · GOOD COMPANY · EVERY DAY</div>
+        <figure class="hero-image">
+          <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="A candle glowing softly in a calm, warmly lit room">
+          <figcaption>Find a little calm in the everyday <span aria-hidden="true">✳</span></figcaption>
+        </figure>
+        <p class="hero-ribbon" aria-hidden="true">LIGHT A CANDLE · TAKE A MOMENT · CARE FOR YOURSELF</p>
       </section>
 
-      <section class="menu-section" id="menu">
-        <div class="menu-heading"><div><p class="eyebrow">Made with care, served with joy</p><h2>A little menu<br><span>magic.</span></h2></div><p>Small-batch favorites, seasonal sips, and bakery treats worth getting out of bed for.</p></div>
-        <div class="menu-grid">
-          <article class="menu-card card-pink"><span class="menu-icon" aria-hidden="true">☕</span><p class="item-type">THE EVERYDAY FAVORITE</p><h3>Honey oat latte</h3><p>Espresso, steamed oat milk, and a kiss of local honey.</p><span class="price">$5.25</span></article>
-          <article class="menu-card card-yellow"><span class="menu-icon" aria-hidden="true">✿</span><p class="item-type">A LITTLE SEASONAL JOY</p><h3>Orange blossom cold brew</h3><p>Slow-steeped coffee with a bright citrus finish.</p><span class="price">$5.75</span></article>
+      <section class="candles-section" id="candles" aria-labelledby="candles-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Scent for the moments that matter</p>
+            <h2 id="candles-title">Make room for<br><span>a little calm.</span></h2>
+          </div>
+          <p>Whether you’re welcoming someone home or giving yourself a well-earned breather, a familiar fragrance can make an ordinary moment feel special.</p>
+        </div>
+        <div class="moment-grid">
+          <article class="moment-card moment-blush">
+            <span class="moment-number" aria-hidden="true">01</span>
+            <span class="moment-icon" aria-hidden="true">☼</span>
+            <p class="card-label">A gentle beginning</p>
+            <h3>Slow mornings</h3>
+            <p>Ease into the day with a soft glow and a moment that belongs just to you.</p>
+          </article>
+          <article class="moment-card moment-sage">
+            <span class="moment-number" aria-hidden="true">02</span>
+            <span class="moment-icon" aria-hidden="true">✳</span>
+            <p class="card-label">A welcome home</p>
+            <h3>Cosy evenings</h3>
+            <p>Settle in, let the day go, and make your favourite corner feel even warmer.</p>
+          </article>
+          <article class="moment-card moment-sand">
+            <span class="moment-number" aria-hidden="true">03</span>
+            <span class="moment-icon" aria-hidden="true">♡</span>
+            <p class="card-label">A thoughtful gesture</p>
+            <h3>Little gifts</h3>
+            <p>Share a small reminder that someone is thought of, appreciated, and cared for.</p>
+          </article>
         </div>
       </section>
+
+      <section class="story-section" id="story" aria-labelledby="story-title">
+        <div class="story-image">
+          <img src="https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="A candle and a quiet moment of warmth at home">
+          <span class="image-mark" aria-hidden="true">made<br>with care</span>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow">The heart behind the glow</p>
+          <h2 id="story-title">Care is at the<br><span>heart of it all.</span></h2>
+          <p>For 27 years, Annette has worked as a carer, giving her time, patience, and kindness to others. Annette’s Scents grew from that same belief: little moments of comfort matter, and everyone deserves to feel cared for.</p>
+          <p>Each candle is an invitation to slow down, create a welcoming space, and pass a little warmth on to someone else.</p>
+          <a class="text-link" href="#care">A little more about our care <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="care-section" id="care" aria-labelledby="care-title">
+        <p class="eyebrow">A light with a little meaning</p>
+        <h2 id="care-title">Made for moments<br>that bring us <span>closer.</span></h2>
+        <p>Care can be a listening ear, a warm welcome, or a quiet moment to yourself. We hope Annette’s Scents brings a little more of that feeling into your home.</p>
+        <a class="button button-light" href="#home">Back to the beginning <span aria-hidden="true">↑</span></a>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#home">Annette’s Scents</a>
+      <p>A little light, a lot of care.</p>
+      <a class="photo-credit" href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">Candle photographs via Unsplash</a>
+      <span class="copyright">© <span id="year">2026</span> Annette’s Scents</span>
+    </footer>
   </body>
 </html>
